@@ -15,6 +15,10 @@ class AnitaAjahApp extends StatelessWidget {
             title: Text(
               'Anita Amarachi Ajah',
               textDirection: TextDirection.ltr,
+              style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue),
             ),
             centerTitle: true,
           ),
@@ -26,6 +30,7 @@ class AnitaAjahApp extends StatelessWidget {
                   height: 20,
                   width: 700,
                   alignment: Alignment.center,
+                  decoration: BoxDecoration(color: Colors.white10),
                   child: Text("Mobile Developer!",
                       style: TextStyle(
                           fontSize: 30,
@@ -33,21 +38,25 @@ class AnitaAjahApp extends StatelessWidget {
                           color: Colors.blueAccent)),
                 )),
                 Container(
-                  child: Image.asset('assets/image-1-jpeg.png'),
+                  width: 500,
+                  decoration: BoxDecoration(color: Colors.white12),
+                  child: Image.asset(
+                    'assets/image-1-jpeg.png',
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 Expanded(
                     child: Container(
-                  height: 0,
-                  width: 300,
+                  decoration: BoxDecoration(color: Colors.white12),
                   child: Center(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: EdgeInsets.symmetric(horizontal: 70.0),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: 'anitaisbeta@gmail.com',
-                          fillColor: Colors.blue,
                           icon: Icon(
                             Icons.email,
+                            color: Colors.pinkAccent,
                           ),
                         ),
                       ),
@@ -56,28 +65,37 @@ class AnitaAjahApp extends StatelessWidget {
                 )),
                 Expanded(
                     child: Container(
-                  height: 0,
-                  width: 300,
+                  decoration: BoxDecoration(color: Colors.white12),
                   child: Center(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: EdgeInsets.symmetric(horizontal: 70.0),
                       child: TextField(
                         decoration: InputDecoration(
-                            hintText: '08065188884', icon: Icon(Icons.phone)),
+                          hintText: '08065188884',
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.phone,
+                            color: Colors.blue,
+                          ),
+                        ),
                       ),
                     ),
                   ),
                 )),
                 Expanded(
                     child: Container(
-                  height: 0,
-                  width: 300,
+                  decoration: BoxDecoration(color: Colors.white12),
                   child: Center(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: EdgeInsets.symmetric(horizontal: 70.0),
                       child: TextField(
                         decoration: InputDecoration(
-                            hintText: 'Lagos', icon: Icon(Icons.map)),
+                          hintText: 'Lagos',
+                          icon: Icon(
+                            Icons.map,
+                            color: Colors.green,
+                          ),
+                        ),
                       ),
                     ),
                   ),
